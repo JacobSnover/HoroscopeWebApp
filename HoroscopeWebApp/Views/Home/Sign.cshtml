@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Sign";
+}
+
+<h2>Sign</h2>
+<div class="container">
+    <div class="row">
+        <h3>Your sign is: </h3> 
+        @ViewBag.Sign
+    </div>
+    <div class="row">
+    <h3>Todays date is: </h3>
+        @ViewBag.FoundSign
+</div>
+<div class="row">
+ <h3>Your daily Horoscope is:</h3>   
+    @ViewBag.Scope
+</div>
+    <a href="/Home/GetWeek" class="btn btn-default btn-sm">
+        <span class="glyphicon glyphicon-list"></span> Weekly Horoscope
+    </a>
+    <a href="/Home/GetMonth" class="btn btn-default btn-sm">
+        <span class="glyphicon glyphicon-list"></span> Monthly Horoscope
+    </a>
+    <a href="/Home/GetYear" class="btn btn-default btn-sm">
+        <span class="glyphicon glyphicon-list"></span> Yearly Horoscope
+    </a>
+</div>
